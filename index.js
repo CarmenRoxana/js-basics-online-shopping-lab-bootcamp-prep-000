@@ -24,8 +24,8 @@ function viewCart() {
   }else if(cart.length===2){
     return "In your cart, you have " +cart[0].itemName+ " at $"+cart[0].itemPrice+ ", and " +cart[1].itemName+ " at $"+cart[1].itemPrice+ "."; 
   }else if(cart.length>=3){
-    var str='';
-    for(var i=1;i<cart.length-1;i++){
+    let str='';
+    for(let i=1;i<cart.length-1;i++){
       str+= cart[i].itemName+ " at $" +cart[i].itemPrice;
     }
     return "In your cart, you have " +cart[0].itemName+ " at $"+cart[0].itemPrice+ ", "+str+ ", and " +cart[cart.length-1].itemName+ " at $"+cart[cart.length-1].itemPrice+ "."; 
