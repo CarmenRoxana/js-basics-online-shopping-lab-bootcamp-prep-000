@@ -40,6 +40,7 @@ function total() {
   for(var i=0;i<cart.length;i++){
     totalValue+=cart[i].itemPrice;
 }
+debugger;
   return totalValue;
 }
 
